@@ -1,4 +1,18 @@
 body{
-  background-color:salmon;
+  background-color:aqua;
 }
 
+h1{
+  text-align: center;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+ul li{
+  background-color: lightslategray;
+  border: 2px white solid;
+  padding: 0.5%;
+}
