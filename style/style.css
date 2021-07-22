@@ -7,9 +7,9 @@ header{
   justify-content: space-between;
   background-color: #ED0270;
   border: solid 5px blue;
-  padding:0.5%;
-  width: 100%;
-  margin: 0;
+  padding: 0.5%;
+  margin: -0.6%;
+  margin-bottom:5%;
 }
 h1{
   font-family: lobster;
@@ -52,8 +52,7 @@ div > img{
   margin:auto;
 }
 div > p{
-  color: white;
-  border: solid black 5px;
+  
   padding: 1%;
 }
 #location{
@@ -103,8 +102,7 @@ footer{
   background-color: #ED0270;
   border: solid 5px blue;
   padding:0.5%;
-  width: 100%;
-  margin: 0;
+  margin: -0.6%;
 }
 footer > img{
   width:5%;

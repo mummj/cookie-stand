@@ -1,3 +1,72 @@
 body{
-  background-color:lightgray;
+  background-color:aqua;
 }
+header{
+  display:flex;
+  justify-content: space-between;
+  background-color: #ED0270;
+  border: solid 5px blue;
+  padding:0.5%;
+  margin: -0.6%;
+  margin-bottom:5%;
+}
+h1{
+  font-family: lobster;
+}
+ul{
+  display: flex;
+}
+header ul li{
+  margin:20% 50%;
+  background-color: #D66809;
+  border: 2px white solid;
+  padding: 10%;
+}
+a {
+  color:white;
+}
+header > img{
+  height: 70px;
+  margin-left: 15%;
+  margin-top: 0.5%;
+  padding-left: 0.5%
+}
+form{
+  margin-bottom:10%;
+  color:white;
+  padding:5%;
+}
+input{
+  display: block;
+  width:12%;
+}
+#city input{
+width:30%;
+}
+fieldset{
+  width:95%;
+  border:solid black 2px;
+}
+legend{
+  text-align: center;
+  font-size: 200%;
+}
+div{
+  background-color: #D66809;
+}
+#form{
+  width:50%;
+  margin-left: 25%;
+}
+table *{
+table-layout: auto;
+font-size: 120%;
+border:white solid 2px;
+width:100%;
+text-align: left;
+}
+td{
+  width:150%;
+}
+
+
