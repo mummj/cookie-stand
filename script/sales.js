@@ -22,7 +22,8 @@ CookieStand.prototype.getCustomerPerHour = function(){
   }
   
 CookieStand.prototype.getCookiesPerHour = function(){ 
-    for(var i=0; i < time.length; i++){
+   this.cookiesPerHour = []; 
+  for(var i=0; i < time.length; i++){
     const cookiesPerHour = Math.floor((this.getCustomerPerHour() * this.avgCookieSale));
     this.cookiesPerHour.push(cookiesPerHour);
     }
@@ -104,21 +105,20 @@ function random(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
+
+
 function handleSubmit(e){
   e.preventDefault();
-  console.log(e.target.city.value);
   let city = e.target.city.value;
   let minCustomer = e.target.lowNum.value;
   let maxCustomer = e.target.highNum.value;
   let avgCookieSale = e.target.avg.value;
-  parseInt(minCustomer);
-  parseInt(maxCustomer);
-  parseInt(avgCookieSale);
   let newCookieStand = new CookieStand(city, minCustomer, maxCustomer, avgCookieSale);
+
 
   tableElm.innerHTML='';
 
-
+  renderHeader();
   renderAllCookieStands();
   renderFooter();
 
@@ -127,15 +127,19 @@ function handleSubmit(e){
 
 formElm.addEventListener('submit', handleSubmit);
 
+
 const seattle = new CookieStand('Seattle', 23, 65, 6.3);
 const tokyo = new CookieStand('Tokyo', 3, 24, 1.2);
 const dubai = new CookieStand('Dubai', 11, 38, 3.7);
 const paris = new CookieStand('Paris', 20, 38, 2.3);
 const lima = new CookieStand('Lima', 2, 16, 4.6)
 
-
-
 renderHeader();
 renderAllCookieStands();
 renderFooter();
+
+
+
+
+
 
